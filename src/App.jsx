@@ -27,7 +27,15 @@ import ResumeDownload from './components/ResumeDownload';
 const App = () => {
   const [activeSection, setActiveSection] = useState('hero');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState({});
+  // Make all sections visible by default to avoid hidden content if observers fail
+  const [isVisible] = useState({
+    hero: true,
+    about: true,
+    experience: true,
+    projects: true,
+    stats: true,
+    contact: true,
+  });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -35,25 +43,6 @@ const App = () => {
     };
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.3,
-      rootMargin: '0px 0px -100px 0px',
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        setIsVisible((prev) => ({
-          ...prev,
-          [entry.target.id]: entry.isIntersecting,
-        }));
-      });
-    }, observerOptions);
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section);
-    });
-    return () => observer.disconnect();
   }, []);
 
   const skills = [
