@@ -18,7 +18,6 @@ import {
 } from 'lucide-react';
 
 import StatsSection from './components/StatsSection';
-import MapSection from './components/MapSection';
 import ResumeDownload from './components/ResumeDownload';
 
 
@@ -159,7 +158,7 @@ const App = () => {
             CK
           </div>
           <div className="hidden md:flex space-x-8">
-            {['hero', 'about', 'experience', 'projects', 'stats', 'locations', 'contact'].map((section) => (
+            {['hero', 'about', 'experience', 'projects', 'stats', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -364,9 +363,6 @@ const App = () => {
 
       {/* Stats Section (new) */}
       <StatsSection />
-
-      {/* Locations Map Section (new) */}
-      <MapSection />
 
       {/* Contact Section */}
       <section id="contact" className="relative z-10 py-20 px-6 bg-black/20">
