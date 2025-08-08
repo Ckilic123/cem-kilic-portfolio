@@ -20,7 +20,7 @@ function IntroSection() {
   return (
     <section className="mb-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-1/2">
-        <h2 className="text-8xl font-extrabold mb-4 text-left">
+        <h2 className="text-5xl font-extrabold mb-4 text-left">
           CEM<br />
           <em className="text-blue-600 not-italic">KILIC</em>
         </h2>
