@@ -21,7 +21,8 @@ function IntroSection() {
           <em className="text-blue-600 not-italic">KILIC</em>
         </h2>
         <p className="text-lg mb-6 max-w-xl">
-          My life mission: To improve human productivity by bringing modern technology closer to our lives.
+          Hey there! I’m a Product Manager 
+          based in Munich, Germany.
         </p>
         <Button asChild><a href="#about">About Me →</a></Button>
       </div>
