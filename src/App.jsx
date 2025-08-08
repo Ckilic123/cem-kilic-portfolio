@@ -5,7 +5,7 @@ function Header() {
     <header className="flex justify-between items-center mb-16">
       <h1 className="text-2xl font-bold">Cem Kilic</h1>
       <nav className="space-x-6" aria-label="Main navigation">
-        <a href="#productivity" className="hover:underline">Productivity</a>
+        <a href="#productivity" className="hover:underline font-bold">Productivity</a>
         <a href="#tech" className="hover:underline">Tech</a>
         <a href="#portfolio" className="hover:underline">Portfolio</a>
         <a href="#photos" className="hover:underline">Photos</a>
