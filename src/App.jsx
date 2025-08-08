@@ -1,5 +1,5 @@
 import { Button } from './components/ui/button.jsx'
-import MapboxCareerMap from './components/MapboxCareerMap.jsx'
+import LeafletCareerMap from './components/LeafletCareerMap.jsx'
 
 function IntroSection() {
   return (
@@ -29,7 +29,7 @@ function IntroSection() {
 
       {/* Column 3: Map */}
       <div className="w-full md:w-1/3">
-        <MapboxCareerMap />
+        <LeafletCareerMap />
       </div>
     </section>
   );
