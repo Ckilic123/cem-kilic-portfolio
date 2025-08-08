@@ -1,1 +1,78 @@
 @import "tailwindcss" source("./");
+@import url('https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css');
+
+/***** Custom styles for Mapbox career pins *****/
+.career-pin {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.35);
+  transform: translateY(-6px);
+}
+
+.career-pin::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 2px);
+  width: 2px;
+  height: 10px;
+  background: rgba(59, 130, 246, 0.9);
+  border-radius: 2px;
+}
+
+/* Pulse animation */
+.career-pin::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  border-radius: 9999px;
+  background: rgba(59, 130, 246, 0.25);
+  animation: pin-pulse 1.8s ease-out infinite;
+}
+
+@keyframes pin-pulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  70% { transform: scale(2.3); opacity: 0; }
+  100% { transform: scale(2.3); opacity: 0; }
+}
+
+/* Tooltip */
+.career-tooltip {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.career-pin.hover .career-tooltip,
+.career-pin:hover .career-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0px);
+}
+
+.tooltip-card {
+  min-width: 220px;
+  max-width: 260px;
+  background: rgba(17, 24, 39, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+
+.tooltip-card .city { font-weight: 800; color: #fff; margin-bottom: 2px; }
+.tooltip-card .title { font-weight: 700; color: #93c5fd; }
+.tooltip-card .company { font-weight: 600; color: #c7d2fe; }
+.tooltip-card .period { font-size: 12px; color: #9ca3af; margin-top: 4px; }

@@ -1,3 +1,6 @@
+import { Button } from './components/ui/button.jsx'
+import MapboxCareerMap from './components/MapboxCareerMap.jsx'
+
 function IntroSection() {
   return (
     <section className="mb-20 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
@@ -24,12 +27,14 @@ function IntroSection() {
         />
       </div>
 
-      {/* Column 3: Map placeholder */}
+      {/* Column 3: Map */}
       <div className="w-full md:w-1/3">
-        <div className="w-full h-[300px] bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-          [Map goes here]
-        </div>
+        <MapboxCareerMap />
       </div>
     </section>
   );
+}
+
+export default function App() {
+  return <IntroSection />
 }
