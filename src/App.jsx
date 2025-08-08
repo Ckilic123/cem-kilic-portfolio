@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 
 function IntroSection() {
   return (
-    <section className="mb-20 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+    <section className="mt-16 mb-20 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
       {/* Column 1: Text */}
       <div className="w-full md:w-1/3 flex flex-col justify-end">
         <h2 className="text-5xl font-extrabold mb-4 text-left leading-tight">
