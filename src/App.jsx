@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 function Header() {
   return (
     <header className="flex justify-between items-center mb-16">
-      <h1 className="text-2xl font-bold">Cem Kilic</h1>
+      <h1 className="text-4xl font-bold">Cem Kilic</h1>
       <nav className="space-x-6" aria-label="Main navigation">
         <a href="#productivity" className="hover:underline">Productivity</a>
         <a href="#tech" className="hover:underline">Tech</a>
