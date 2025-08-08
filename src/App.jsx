@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 
 function IntroSection() {
   return (
-    <section className="mb-4 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+    <section className="mb-8 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
       {/* Column 1: Text */}
       <div className="w-full md:w-1/3 flex flex-col justify-end">
         <h2 className="text-5xl font-extrabold mb-4 text-left leading-tight">
@@ -24,12 +24,12 @@ function IntroSection() {
         <img
           src="/pic.jpg"
           alt="Cem Kilic"
-          className="rounded-2xl shadow-lg w-full max-w-[300px] md:max-w-[400px] h-[300px] object-cover"
+          className="rounded-2xl shadow-lg w-full max-w-[300px] md:max-w-[350px] h-auto"
         />
       </div>
 
       {/* Column 3: Map */}
-      <div className="w-full md:w-1/3 h-[300px]">
+      <div className="w-full md:w-1/3">
         <LeafletCareerMap />
       </div>
     </section>
@@ -37,7 +37,7 @@ function IntroSection() {
 }
 
 function AboutSection() {
-  return <section id="about" className="scroll-mt-20 px-4 py-12 bg-white"></section>;
+  return <section id="about" className="scroll-mt-20 px-4 py-16 bg-white"></section>;
 }
 
 function PortfolioSection() {
@@ -67,13 +67,11 @@ function PortfolioSection() {
   return (
     <section id="portfolio" className="scroll-mt-20 px-4 pt-4 pb-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-left">
-          Portfolio
-        </h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <div key={index} className="bg-white shadow rounded overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-56 object-cover" />
+              <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
               <div className="flex flex-col md:flex-row items-center justify-between p-6 gap-4">
                 <div>
                   <h3 className="text-lg font-bold">{project.title}</h3>
