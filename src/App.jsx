@@ -37,7 +37,7 @@ function IntroSection() {
 }
 
 function AboutSection() {
-  return <section id="about" className="scroll-mt-20 px-4 py-16 bg-white">About Section</section>
+  return <section id="about" className="scroll-mt-20 px-4 py-16 bg-white"></section>;
 }
 
 function PortfolioSection() {
@@ -45,22 +45,22 @@ function PortfolioSection() {
     {
       title: "Expanding Elva’s Product Platforms",
       description: "Long Term Strategic Planning",
-      image: "https://source.unsplash.com/600x400/?technology",
+      image: "https://picsum.photos/id/1011/600/400",
     },
     {
       title: "Driving Smooth Product Execution",
       description: "Fancity’s Product Culture",
-      image: "https://source.unsplash.com/600x400/?mobile-app",
+      image: "https://picsum.photos/id/1005/600/400",
     },
     {
       title: "Scaling SaaS Operations",
       description: "Operational Efficiency for Growth",
-      image: "https://source.unsplash.com/600x400/?saas",
+      image: "https://picsum.photos/id/1015/600/400",
     },
     {
       title: "User-Centric Product Design",
       description: "Design Thinking in Action",
-      image: "https://source.unsplash.com/600x400/?ux",
+      image: "https://picsum.photos/id/1025/600/400",
     },
   ];
 
@@ -90,7 +90,7 @@ function PortfolioSection() {
 }
 
 function ContactSection() {
-  return <section id="contact" className="scroll-mt-20 px-4 py-16 bg-white">Contact Section</section>
+  return <section id="contact" className="scroll-mt-20 px-4 py-16 bg-white"></section>;
 }
 
 export default function App() {
