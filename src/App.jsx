@@ -27,7 +27,7 @@ function IntroSection() {
       </div>
       <div className="w-full md:w-1/2">
         {/* Replace src with actual image path */}
-        <img src="/cem-profile.jpg" alt="Cem Kilic" className="rounded-2xl shadow-lg w-full h-auto" />
+        <img src="/pic.jpg" alt="Cem Kilic" className="rounded-2xl shadow-lg w-full h-auto" />
       </div>
     </section>
   );
