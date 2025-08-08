@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 
 function IntroSection() {
   return (
-    <section className="mt-16 mb-20 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+    <section className="mb-20 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
       {/* Column 1: Text */}
       <div className="w-full md:w-1/3 flex flex-col justify-end">
         <h2 className="text-5xl font-extrabold mb-4 text-left leading-tight">
@@ -37,20 +37,20 @@ function IntroSection() {
 }
 
 function AboutSection() {
-  return <section id="about" />
+  return <section id="about" className="scroll-mt-20">About Section</section>
 }
 
 function PortfolioSection() {
-  return <section id="portfolio" />
+  return <section id="portfolio" className="scroll-mt-20">Portfolio Section</section>
 }
 
 function ContactSection() {
-  return <section id="contact" />
+  return <section id="contact" className="scroll-mt-20">Contact Section</section>
 }
 
 export default function App() {
   return (
-    <div className="relative">
+    <div className="relative pt-20">
       <Navbar />
       <IntroSection />
       <AboutSection />
