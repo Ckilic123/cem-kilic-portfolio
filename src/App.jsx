@@ -21,8 +21,8 @@ function IntroSection() {
     <section className="mb-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-1/2">
         <h2 className="text-4xl font-extrabold mb-4 text-left">
-          Welcome to<br />
-          <em className="text-blue-600 not-italic">CemKilic.com</em>
+          CEM<br />
+          <em className="text-blue-600 not-italic">KILIC</em>
         </h2>
         <p className="text-lg mb-6 max-w-xl">
           My mission: Build simple digital products that solve real B2B problems.
