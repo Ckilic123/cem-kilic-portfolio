@@ -1,5 +1,6 @@
 import { Button } from './components/ui/button.jsx'
 import LeafletCareerMap from './components/LeafletCareerMap.jsx'
+import Navbar from './components/Navbar.jsx'
 
 function IntroSection() {
   return (
@@ -35,6 +36,26 @@ function IntroSection() {
   );
 }
 
+function AboutSection() {
+  return <section id="about" />
+}
+
+function PortfolioSection() {
+  return <section id="portfolio" />
+}
+
+function ContactSection() {
+  return <section id="contact" />
+}
+
 export default function App() {
-  return <IntroSection />
+  return (
+    <div className="relative">
+      <Navbar />
+      <IntroSection />
+      <AboutSection />
+      <PortfolioSection />
+      <ContactSection />
+    </div>
+  )
 }
